@@ -1,0 +1,105 @@
+@import '../abstract/var';
+
+.container-conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    
+    //*Card completo
+    .card {
+        width: 410px;
+        height: 560px;
+        background: $cor-branco;
+        border-radius: 1rem;
+        
+        // *Parte de cima do card
+        .card-cima {
+            display: flex;
+            justify-content: center;
+            background: $cor-roxo-gradient;
+            height: 32%;
+            border-top-right-radius: 1rem;
+            border-top-left-radius: 1rem;
+            img {
+                position: absolute;
+                top: 15.5%;
+            }
+        }
+        
+        // *Parte de baixo do card
+        .card-baixo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin: 3rem auto 0;
+            gap: 2rem;
+            
+            // *Descrição do produto
+            .produto-info {
+                width: 75%;
+                .produto-titulo {
+                    margin: 0;
+                    font-size: $tamanho-do-texto * 1.25;
+                }
+                .produto-texto {
+                    font-size: $tamanho-do-texto;
+                    line-height: 150%;
+                    .produto-span {
+                        color: $cor-roxo-escuro;
+                    }
+                }
+            }
+            
+            // *Área de avaliação
+            .produto-review {
+                display: flex;
+                flex-direction: column;
+                .review-rating {
+                    display: flex;
+                    gap: 1rem;
+                    label {
+                        cursor: pointer;
+                    }
+                    input[type="checkbox"] {
+                        display: none;
+                    }
+                }
+                .rating-desc {
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 0 0.5rem;
+                    span {
+                        font-size: $tamanho-do-texto * 0.75;
+                        color: $cor-cinza;
+                    }
+                }
+            }
+
+            // *Botão para confirmar a avaliação
+            .botao-confirmar {
+                display: flex;
+                justify-content: space-between;
+                padding: 1rem;
+                align-items: center;
+                width: 75%;
+                height: 3.5rem;
+                background-color: $cor-roxo;
+                border: none;
+                border-radius: 0.5rem;
+                cursor: pointer;
+                p {
+                    color: $cor-branco;
+                    font-weight: 700;
+                }
+                img {
+                    width: 24px;
+                    height: 24px;
+                    filter: invert(100%) sepia(0%) saturate(7322%) hue-rotate(184deg) brightness(119%) contrast(96%);
+                }
+            }
+        }
+    }
+}

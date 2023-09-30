@@ -1,0 +1,21 @@
+@import './var';
+
+html, body {
+    font-family: $fonte;
+    font-size: $tamanho-do-texto;
+    background: $cor-roxo-escuro-gradient;
+    height: -webkit-fill-available;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+// *Remover scroll da página
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}

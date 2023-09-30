@@ -1,0 +1,110 @@
+html, body {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  background: linear-gradient(45deg, #0F0A31, #3F347E);
+  height: -webkit-fill-available;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.container-conteudo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.container-conteudo .card {
+  width: 410px;
+  height: 560px;
+  background: #FAFAFA;
+  border-radius: 1rem;
+}
+.container-conteudo .card .card-cima {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(45deg, #4453B2, #502C9E);
+  height: 32%;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+.container-conteudo .card .card-cima img {
+  position: absolute;
+  top: 15.5%;
+}
+.container-conteudo .card .card-baixo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 3rem auto 0;
+  gap: 2rem;
+}
+.container-conteudo .card .card-baixo .produto-info {
+  width: 75%;
+}
+.container-conteudo .card .card-baixo .produto-info .produto-titulo {
+  margin: 0;
+  font-size: 1.25rem;
+}
+.container-conteudo .card .card-baixo .produto-info .produto-texto {
+  font-size: 1rem;
+  line-height: 150%;
+}
+.container-conteudo .card .card-baixo .produto-info .produto-texto .produto-span {
+  color: #4439C7;
+}
+.container-conteudo .card .card-baixo .produto-review {
+  display: flex;
+  flex-direction: column;
+}
+.container-conteudo .card .card-baixo .produto-review .review-rating {
+  display: flex;
+  gap: 1rem;
+}
+.container-conteudo .card .card-baixo .produto-review .review-rating label {
+  cursor: pointer;
+}
+.container-conteudo .card .card-baixo .produto-review .review-rating input[type=checkbox] {
+  display: none;
+}
+.container-conteudo .card .card-baixo .produto-review .rating-desc {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0.5rem;
+}
+.container-conteudo .card .card-baixo .produto-review .rating-desc span {
+  font-size: 0.75rem;
+  color: #75747A;
+}
+.container-conteudo .card .card-baixo .botao-confirmar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+  width: 75%;
+  height: 3.5rem;
+  background-color: #685ED9;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.container-conteudo .card .card-baixo .botao-confirmar p {
+  color: #FAFAFA;
+  font-weight: 700;
+}
+.container-conteudo .card .card-baixo .botao-confirmar img {
+  width: 24px;
+  height: 24px;
+  filter: invert(100%) sepia(0%) saturate(7322%) hue-rotate(184deg) brightness(119%) contrast(96%);
+}/*# sourceMappingURL=style.css.map */

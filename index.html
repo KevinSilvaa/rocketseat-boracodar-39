@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -17,7 +18,10 @@
         <section class="container-conteudo">
             <div class="card">
                 <div class="card-cima">
-                    <img src="./img/Image.svg" alt="imagem do produto">
+                    <button class="seta-voltar hidden" id="voltar">
+                        <img class="seta" src="./img/arrow-left.svg" alt="Imagem de uma seta para voltar">
+                    </button>   
+                    <img class="produto" src="./img/Image.svg" alt="imagem do produto para ser avaliado">
                 </div>
                 <div class="card-baixo">
                     <div class="produto-info">
@@ -27,15 +31,15 @@
                     <div class="produto-review">
                         <div class="review-rating">
                             <input type="checkbox" id="estrela">
-                            <label for="estrela"><img src="./img/Estrela.svg"></label>
+                            <label for="estrela"><img src="./img/star.svg"></label>
                             <input type="checkbox" id="estrela2">
-                            <label for="estrela2"><img src="./img/Estrela.svg"></label>
+                            <label for="estrela2"><img src="./img/star.svg"></label>
                             <input type="checkbox" id="estrela3">
-                            <label for="estrela3"><img src="./img/Estrela.svg"></label>
+                            <label for="estrela3"><img src="./img/star.svg"></label>
                             <input type="checkbox" id="estrela4">
-                            <label for="estrela4"><img src="./img/Estrela.svg"></label>
+                            <label for="estrela4"><img src="./img/star.svg"></label>
                             <input type="checkbox" id="estrela5">
-                            <label for="estrela5"><img src="./img/Estrela.svg"></label>
+                            <label for="estrela5"><img src="./img/star.svg"></label>
                         </div>
                         <div class="rating-desc">
                             <span>Ruim</span>
@@ -43,8 +47,8 @@
                         </div>
                     </div>
                     <button class="botao-confirmar" type="submit">
-                        <p>Confirmar</p>
-                        <img src="./img/Type=ArrowRight.svg">
+                        <p id="texto-botao">Confirmar</p>
+                        <img src="./img/arrow-right.svg">
                     </button>
                 </div>
             </div>
@@ -52,6 +56,8 @@
     </main>
     <footer class="footer">
 
-    </footer> 
+    </footer>
+
 </body>
+
 </html>

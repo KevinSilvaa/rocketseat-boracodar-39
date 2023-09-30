@@ -17,14 +17,37 @@
         // *Parte de cima do card
         .card-cima {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
+            gap: 1rem;
             background: $cor-roxo-gradient;
             height: 32%;
             border-top-right-radius: 1rem;
             border-top-left-radius: 1rem;
-            img {
+            
+            // *Seta para voltar para a página anterior
+            .seta-voltar {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: none;
                 position: absolute;
-                top: 15.5%;
+                border: none;
+                cursor: pointer;
+                margin: 1rem;
+                width: 24px;
+                height: 24px;
+                .seta {
+                    
+                }
+            }
+            .produto {
+                position: relative;
+                margin: auto;
+                bottom: 29%;
+            }
+            // *Esconder a seta na primeira tela
+            .hidden {
+                display: none;
             }
         }
         
@@ -59,7 +82,7 @@
                 flex-direction: column;
                 .review-rating {
                     display: flex;
-                    gap: 1rem;
+                    gap: 2rem;
                     label {
                         cursor: pointer;
                     }
@@ -70,7 +93,6 @@
                 .rating-desc {
                     display: flex;
                     justify-content: space-between;
-                    margin: 0 0.5rem;
                     span {
                         font-size: $tamanho-do-texto * 0.75;
                         color: $cor-cinza;
@@ -93,11 +115,6 @@
                 p {
                     color: $cor-branco;
                     font-weight: 700;
-                }
-                img {
-                    width: 24px;
-                    height: 24px;
-                    filter: invert(100%) sepia(0%) saturate(7322%) hue-rotate(184deg) brightness(119%) contrast(96%);
                 }
             }
         }

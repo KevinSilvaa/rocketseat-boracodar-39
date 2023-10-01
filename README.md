@@ -7,7 +7,7 @@ Desenvolvi este widget de avaliações utilizando HTML, SASS e JavaScript, prime
 
 ## 🔨 Objetivos do projeto
 
-Participei deste desafio para desenvolver uma widget de avaliação para praticar e poder colocar em prática tudo que aprendi até o momento
+Participei deste desafio de desenvolver uma widget de avaliação para exercitar e colocar em prática tudo que aprendi até o momento, e cada vez mais pretendo melhorar os meus conhecimentos na área da programação
 
 ## Tecnologias utilizadas:
 

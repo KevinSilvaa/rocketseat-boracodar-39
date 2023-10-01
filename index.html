@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <script src="./js/main.js" defer></script>
 </head>
 <body>
@@ -16,36 +17,50 @@
     </header>
     <main class="container">
         <section class="container-conteudo">
+            
+            <!-- *Card de avaliação -->
             <div class="card">
+                
+                <!-- *Parte de cima do card -->
                 <div class="card-cima">
+                    
+                    <!-- Seta para voltar -->
                     <button class="seta-voltar hidden" id="voltar">
                         <img class="seta" src="./img/arrow-left.svg" alt="Imagem de uma seta para voltar">
                     </button>   
+                    
+                    <!-- Imagem do produto -->
                     <img class="produto" src="./img/Image.svg" alt="imagem do produto para ser avaliado">
                 </div>
+                
+                <!-- *Card de baixo -->
                 <div class="card-baixo">
+                    
+                    <!-- *Informações do produto -->
                     <div class="produto-info">
                         <h3 class="produto-titulo">Avalie o produto</h3>
                         <p class="produto-texto">O que você achou do produto <span class="produto-span">Smartwatch Amazfit Bip U Pro</span>?</p>
                     </div>
+                    
+                    <!-- *Estrelas de avaliação -->
                     <div class="produto-review">
-                        <div class="review-rating">
-                            <input type="checkbox" id="estrela">
-                            <label for="estrela"><img src="./img/star.svg"></label>
-                            <input type="checkbox" id="estrela2">
-                            <label for="estrela2"><img src="./img/star.svg"></label>
-                            <input type="checkbox" id="estrela3">
-                            <label for="estrela3"><img src="./img/star.svg"></label>
-                            <input type="checkbox" id="estrela4">
-                            <label for="estrela4"><img src="./img/star.svg"></label>
-                            <input type="checkbox" id="estrela5">
-                            <label for="estrela5"><img src="./img/star.svg"></label>
+                        <div class="review-rating remove">
+                            <i class="ph-fill ph-star"></i>
+                            <i class="ph-fill ph-star"></i>
+                            <i class="ph-fill ph-star"></i>
+                            <i class="ph-fill ph-star"></i>
+                            <i class="ph-fill ph-star"></i>
                         </div>
-                        <div class="rating-desc">
+                        <div class="rating-desc remove">
                             <span>Ruim</span>
                             <span>Ótimo</span>
                         </div>
+                        <div class="review-texto hidden">
+                            <textarea class="area-texto" placeholder="Escreva a sua mensagem aqui" rows="6" cols="40" required></textarea>
+                        </div>
                     </div>
+                    
+                    <!-- *Botão para confirmar avaliação -->
                     <button class="botao-confirmar" type="submit">
                         <p id="texto-botao">Confirmar</p>
                         <img src="./img/arrow-right.svg">

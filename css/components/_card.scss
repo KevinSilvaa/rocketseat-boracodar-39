@@ -36,18 +36,16 @@
                 margin: 1rem;
                 width: 24px;
                 height: 24px;
-                .seta {
-                    
-                }
+            }
+            
+            // *Esconder a seta na página inicial
+            .hidden {
+                display: none;
             }
             .produto {
                 position: relative;
                 margin: auto;
                 bottom: 29%;
-            }
-            // *Esconder a seta na primeira tela
-            .hidden {
-                display: none;
             }
         }
         
@@ -70,6 +68,7 @@
                 .produto-texto {
                     font-size: $tamanho-do-texto;
                     line-height: 150%;
+                    margin-bottom: 0;
                     .produto-span {
                         color: $cor-roxo-escuro;
                     }
@@ -83,19 +82,62 @@
                 .review-rating {
                     display: flex;
                     gap: 2rem;
-                    label {
-                        cursor: pointer;
+                    margin-bottom: 0.5rem;
+                    i {
+                        color: $cor-cinza;
+                        font-size: 2rem;
+                        transition: all 0.2s ease;
+                        &:hover {
+                            color: $cor-amarelo;
+                            background: $cor-amarelo-claro;
+                            border-radius: 50%;
+                        }
                     }
-                    input[type="checkbox"] {
-                        display: none;
+                    .active {
+                        color: $cor-amarelo-estrela;
+                        &:hover {
+                            color: $cor-amarelo-estrela;
+                            background: $cor-amarelo-claro;
+                            border-radius: 50%;
+                        }
                     }
+                    
                 }
                 .rating-desc {
                     display: flex;
                     justify-content: space-between;
+                    margin-bottom: 1rem;
                     span {
                         font-size: $tamanho-do-texto * 0.75;
                         color: $cor-cinza;
+                    }
+                }
+                .hidden {
+                    display: none;
+                }
+                .review-texto {
+                    
+                    // *Textarea para avaliação
+                    .area-texto {
+                        max-width: 290px;
+                        max-height: 80px;
+                        border: none;
+                        border-radius: 0.5rem;
+                        background: $cor-cinza-claro;
+                        padding: 0.5rem;
+                        color: $cor-preto;
+                        outline: none;
+                        
+                        // Cor do placeholder
+                        &::placeholder {
+                            color: $cor-cinza;
+                        }
+                        
+                        // Borda quando o textarea for selecionado
+                        &:focus {
+                            border: 1px solid $cor-roxo;
+                            transition: 0.2s;
+                        }
                     }
                 }
             }
@@ -115,6 +157,10 @@
                 p {
                     color: $cor-branco;
                     font-weight: 700;
+                }
+                &:hover {
+                    background: $cor-roxo-escuro;
+                    transition: 0.2s;
                 }
             }
         }

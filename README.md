@@ -1,4 +1,3 @@
-
 # Widget de avaliações
 
 Desenvolvi este widget de avaliações utilizando HTML, SASS e JavaScript, primeiro você irá avaliar o produto em estrelas, e depois irá escrever o motivo da sua avaliação, neste caso, o produto utilizado foi um relógio
